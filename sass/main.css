@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.abutsec {
+  background: #eeecec;
+  height: 600px;
+}
+
+.testm {
+  background: #eeecec;
+  height: 800px;
+}
+
+/*----------------------- footer ----------------------*/
+@media only screen and (max-width: 764px) {
+  .sliderh {
+    display: none;
+  }
+  .abutsec {
+    height: 1000px;
+  }
+  .testm {
+    height: 1400px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
