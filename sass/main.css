@@ -21,9 +21,9 @@ body {
 }
 
 /*----------------------- footer ----------------------*/
-@media only screen and (min-width: 200px) and (max-width: 991px) {
+@media only screen and (min-width: 100px) and (max-width: 991px) {
   .cap h3 {
-    color: #000;
+    color: #350000;
   }
   .abutsec {
     height: 1000px;
