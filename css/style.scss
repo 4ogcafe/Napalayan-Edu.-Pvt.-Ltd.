@@ -1,0 +1,133 @@
+*{
+	margin:0;
+	padding: 0;
+	font-family: sans-serif; 
+}
+body{
+	background: #444;
+}
+.main{
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:url('../image/1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+.main .loading{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.main .loading .loader{
+	position: absolute;
+	height: 1000px;
+	width: 1000px;
+	background:rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0px 0.5px 5px rgba(0, 0, 0, 0.2);
+	transform: rotateZ(45deg) scale(0);
+	animation:animateloadup 2s linear forwards 1;
+}
+@keyframes animateloadup{
+	0%{
+		transform: rotateZ(45deg) scale(0);
+	}
+	50%{
+		transform: rotateZ(45deg) scale(0.5);
+	}
+	100%{
+		transform: rotateZ(45deg) scale(1);
+	}
+}
+.main .loading .loader.loader1{
+	animation-delay: 0.3s;
+}
+.main .loading .loader.loader2{
+	animation-delay: 0.5s;
+}
+.main .loading .loader.loader3{
+	animation-delay: 0.7s;
+}
+.main .loading .loader.loader4{
+	animation-delay: 0.9s;
+}
+.main .text{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.main .text h2{
+	position: relative;
+	font-size: 8.5em;
+	font-weight: 800;
+	color: #2eec17;
+	text-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.5);
+	margin-top: 8%;
+	margin-bottom: 2%;
+	animation:animate 6s linear 1;
+}
+.main .text h1{
+	position: relative;
+	font-size: 4.5em;
+	font-weight: 750;
+	text-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.5);
+	margin-bottom: 1%;
+	color: #fff;
+	animation:animate 7s linear 1;
+}
+.main .text p{
+	position: relative;
+	font-size: 1.5em;
+	font-weight: 500;
+	text-shadow: 0px 0.5px 2px rgba(0, 0, 0, 0.5);
+	margin-bottom: 2%;
+	color: #ddd;
+	animation:animate 8s linear 1;
+}
+.main .text a{
+	position: relative;
+	font-size: 1em;
+	font-weight: 500;
+	color: #fff;
+	border:1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 2px;
+	padding:10px 15px;
+	text-decoration: none;
+	animation:animate 9s linear 1;
+}
+.main .text a:hover{
+	background:rgba(0, 0, 0, 0.2);
+}
+@keyframes animate{
+	0%{
+		opacity: 0;
+		transform: scale(0);
+	}
+	50%{
+		opacity: 0.2;
+		transform: scale(0.5);
+	}
+	100%{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.main .text h2{
+		margin-top: 70%;
+	}
+}
