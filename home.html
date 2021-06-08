@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="sass/style.css">
+  <!-- test -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 </head>
 <body>
     <!-- --------------------------header part ---------------------------- -->
@@ -28,22 +31,37 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#about">About us</a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                      Courses
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#course">Japanes Language</a>
+                      <a class="dropdown-item" href="#course">English Language</a>
+                      <a class="dropdown-item" href="#course">Chinese Language</a>
+                      <a class="dropdown-item" href="#course">Korean Language</a>
+                      <a class="dropdown-item" href="#course">SansKrit Language</a>
+                      <a class="dropdown-item" href="#course">Nepali Language</a>
+                      <a class="dropdown-item" href="#course">Hindi Language</a>
+                      <a class="dropdown-item" href="#course">Adv. Computer class</a>
+
+                    </div>
+                  </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#course">Courses</a>
-                </li>
+                    <a class="nav-link" href="#neo">NEO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#team">Our Team</a>
+                  </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#tstm">Testimonial</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact us</a>
+                    <a class="nav-link" href="#">Account</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="far fa-user-plus"></i> Sing up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="far fa-sign-in-alt"></i> login</a>
-                </li>
-                
+                  <a class="nav-link" href="#">Contact us</a>
+              </li>
               </ul>
               
             </div>
@@ -102,9 +120,9 @@
 
 <!-- --------------------------about us part ---------------------------- -->
 
-<section id="#abutus">
-<div class="container-fluid aboutus my-5">
-    <h3 class="text-center">About Us</h3>
+<section id="about" class="">
+<div class="container-fluid aboutus">
+    <h3 class="text-center  mt-5">About Us</h3>
     <hr class="w-25 m-auto pb-3">
 <div class="row">
     <div class="col-sm-6 mb-1" ><img class="img-fluid" src="image/abt_img.jpg" alt="abt_img"></div>
@@ -128,7 +146,7 @@
 
 <!-- --------------------------course us part ---------------------------- -->
 
-<section id="#course">
+<section id="course">
     <div class="container-fluid  my-5">
         <h3 class="text-center">Courses</h3>
         <hr class="w-25 m-auto pb-5">
@@ -184,7 +202,7 @@
         </div>
         <div class="col-sm-3 mb-3">
             <div class="card" data-aos="flip-left">
-                <div class="card-header"><h3 class="text-dark">Computer Courses</h3></div>
+                <div class="card-header"><h3 class="text-dark">Adv. Computer class</h3></div>
                 <div class="card-body">What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry </div>
                 <div class="btn bg-primary">Read more</div>
             </div>
@@ -199,7 +217,7 @@
 
 <!-- --------------------------Features us part ---------------------------- -->
 
-<section id="#features">
+<section id="neo">
     <div class="container-fluid  my-5">
         <h3 class="text-center">NEO Features</h3>
         <hr class="w-25 m-auto pb-5">
@@ -224,7 +242,7 @@
 
 
 <!-- --------------------------Our Team part ---------------------------- -->
-<section id="#partner">
+<section id="team">
     <div class="container-fluid my-5">
         <h3 class="text-center">Our Team Members</h3>
         <hr class="w-25 m-auto pb-5">
@@ -233,7 +251,7 @@
             <div class="card">
                 <img class="card-img-top" src="image/tm1.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
+                  <h4 class="card-title">John Doe </h4>(CEO)
                   <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
                   <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
@@ -243,7 +261,7 @@
             <div class="card">
                 <img class="card-img-top" src="image/tm2.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
+                  <h4 class="card-title">John Doe </h4>(Director)
                   <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
                   <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
@@ -253,7 +271,7 @@
             <div class="card">
                 <img class="card-img-top" src="image/tm3.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
+                  <h4 class="card-title">John Doe </h4>(Asst. Drector)
                   <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
                   <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
@@ -263,7 +281,7 @@
             <div class="card">
                 <img class="card-img-top" src="image/tm4.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
+                  <h4 class="card-title">John Doe </h4>(Profesor)
                   <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
                   <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
@@ -273,7 +291,7 @@
             <div class="card">
                 <img class="card-img-top" src="image/tm5.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
+                  <h4 class="card-title">John Doe </h4>(Japanes Prof.)
                   <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
                   <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
@@ -283,7 +301,7 @@
             <div class="card">
                 <img class="card-img-top" src="image/tm6.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
+                  <h4 class="card-title">John Doe </h4>(English Prof.)
                   <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
                   <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
@@ -293,7 +311,7 @@
             <div class="card">
                 <img class="card-img-top" src="image/tm7.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
+                  <h4 class="card-title">John Doe </h4>(Computer Prof.)
                   <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
                   <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
@@ -303,7 +321,7 @@
             <div class="card">
                 <img class="card-img-top" src="image/tm8.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
+                  <h4 class="card-title">John Doe </h4>(Manager)
                   <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
                   <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
@@ -312,7 +330,6 @@
     </div>
     </div>
 </section>
-
 
 
 <!-- --------------------------footer part ---------------------------- -->
